@@ -1,5 +1,4 @@
 "use client";
-//  import { useState } from "react";
 import styled from "styled-components";
 
 const H1 = styled.h1`
@@ -13,8 +12,6 @@ const Button1 = styled.button`
   font-weight: 500;
 `;
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
     <div>
       <H1> Hello World</H1>
