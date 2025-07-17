@@ -1,22 +1,29 @@
 "use client";
 import styled from "styled-components";
+import { GlobalStyles } from "./styles/GlobalStyles";
+import Button from "./ui/Button";
+import Input from "./ui/Input";
+import Heading from "./ui/Heading";
 
-const H1 = styled.h1`
-  font-size: 30px;
-  font-weight: bold;
+const StyledApp = styled.main`
+  background-color: orangered;
+  padding: 20px;
 `;
 
-const Button1 = styled.button`
-  font-size: 1.4rem;
-  padding: 1.2rem 1.6rem;
-  font-weight: 500;
-`;
 function App() {
   return (
-    <div>
-      <H1> Hello World</H1>
-      <Button1>Click me</Button1>
-    </div>
+    <>
+      <GlobalStyles />
+
+      <StyledApp>
+        <Heading as="h1">The Wild Oasis</Heading>
+        <Heading as="h2">Checking In and Out</Heading>
+        <Button>Check In</Button>
+        <Button>Check Out</Button>
+        <Heading as="h3">Form</Heading>
+        <Input type="number" placeholder="Enter a number"></Input>
+      </StyledApp>
+    </>
   );
 }
 
