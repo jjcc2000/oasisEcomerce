@@ -66,7 +66,7 @@ export default function MainNav() {
         </li>
 
         <li>
-          <StyledNavLink to="/cabings">
+          <StyledNavLink to="/cabins">
             <HiOutlineHomeModern /> <span>Cabins</span>
           </StyledNavLink>
         </li>
